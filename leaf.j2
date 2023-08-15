@@ -1,6 +1,3 @@
 clock timezone standard-timezone Europe/Amsterdam
 hostname {{device.name}}
 
-{% for ntp_server in device.json.results[0].config_context['ntp-servers-network'] %}
-ntp server {{ ntp_server }}
-{% endfor %}
